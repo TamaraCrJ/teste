@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nerd Cat - Fale Conosco</title>
+  <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    main {
+      text-align: center;
+    }
+
+    #mensagem {
+      height: 120px;
+    }
+
+    @media screen and (min-width:320px) {
+      form {
+        background-color: #f8eaf4;
+        width: 95%;
+        margin: auto;
+        padding: 16px;
+        border-radius: 10px;
+        text-align: left;
+      }
+
+      #nome,
+      #email,
+      #assunto {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      #mensagem {
+        width: 100%;
+      }
+
+    }
+
+    @media screen and (min-width:600px) {
+
+
+      form {
+        background-color: #f8eaf4;
+        width: 62%;
+        margin: auto;
+        padding: 16px;
+        border-radius: 10px;
+        text-align: left;
+      }
+
+      #nome,
+      #email,
+      #assunto {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+      }
+    }
+
+    @media screen and (min-width:750px) {
+
+
+      form {
+        background-color: #f8eaf4;
+        width: 32%;
+        margin: auto;
+        padding: 16px;
+        border-radius: 10px;
+        text-align: left;
+      }
+
+      #nome,
+      #email,
+      #assunto {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+      }
+    }
+
+    @media screen and (min-width:1530px) {
+
+      form {
+        background-color: #f8eaf4;
+        width: 32%;
+        margin: auto;
+        padding: 16px;
+        border-radius: 10px;
+        text-align: left;
+      }
+
+      #nome,
+      #email,
+      #assunto {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+      }
+
+    }
+
+    @media screen and (min-width:2014px) {
+
+      form {
+        background-color: #f8eaf4;
+        width: 25%;
+        margin: auto;
+        padding: 16px;
+        border-radius: 10px;
+        text-align: left;
+      }
+
+      #nome,
+      #email,
+      #assunto {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+      }
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="logoredondo">
+      <a href="index.html"><img src="imagens/logo-184px.jpg" alt="Logo com o nome do site"></a>
+    </nav>
+
+    <nav class="botoes">
+
+      <a href="mochilas.html">Mochilas</a>
+
+      <a href="acessorios.html">Acessórios</a>
+
+      <a href="necessaires.html">Necessaires</a>
+
+      <a href="escolar.html">Escolar</a>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+    <h2>Fale Conosco</h2>
+
+    <p>Olá, precisa falar conosco? Preencha o formulário abaixo e nós responderemos em breve 😄</p>
+
+    <form id="my-form" action="https://formspree.io/f/mgeqybbz" method="post">
+
+      <div class="formulario01">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+      </div>
+
+      <br><br>
+
+      <div class="formulario02">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <br><br>
+
+      <div class="formulario03">
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto">
+          <option value=""></option>
+          <option>Elogios</option>
+          <option>Dúvidas</option>
+          <option>Reclamações</option>
+          <option>Outros</option>
+        </select>
+      </div>
+
+      <br>
+
+      <div class="formulario04">
+      <label for="mensagem">Mensagem máximo (500 caracteres) </label> <br>
+      <textarea name="mensagem" id="mensagem"></textarea>
+      </div>
+
+      <br> <br>
+
+      <div class="formulario05">
+        <button type="submit">Enviar</button>
+      </div>
+
+      <p id="my-form-status"></p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer01">
+      <h3>Navegação</h3>
+
+      <p><span><a href="mochilas.html">Mochilas</a></span></p>
+      <p><a href="acessorios.html">Acessórios</a></p>
+      <p><a href="necessaires.html">Necessaires</a></p>
+      <p><a href="escolar.html">Escolar</a></p>
+    </div>
+
+    <div class="footer02">
+      <h3>Contato</h3>
+
+      <p><img src="imagens/logo-gmail.png" alt="Logo de e-mail preto e branco"><a href="mailto:NerdCatAtelie@gmail.com">
+          E-mail</a></p>
+
+      <p><img src="imagens/logo-zap.png" alt="Logo do whatsapp preto e branco"><a href="https://wa.me/5511962601424"
+          target="_blank"> Whatsapp</a>
+      </p>
+
+      <p><a href="faleconosco.html">Fale Conosco</a></p>
+    </div>
+
+    <div class="footer03">
+      <h3>Siga-nos no Instagram</h3>
+      <p><a href="https://www.instagram.com/nerdcatatelie" target="_blank"><img src="imagens/qrcode-insta.png"
+            alt="Logo preto e branco do Instagram"></a></p>
+    </div>
+  </footer>
+
+  <script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Obrigada por entrar em contato! 😊";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! Parece que algo deu errado, tente novamente."
+              status.style.color = "red"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! Parece que algo deu errado, tente novamente."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
+
+</body>
+
+</html>
